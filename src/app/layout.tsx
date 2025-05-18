@@ -8,6 +8,9 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 export const metadata: Metadata = {
   title: 'Adelheid London | Attorney at Law - Ghana',
   description: 'From healthcare to law: bringing a unique perspective to legal practice in Ghana',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
