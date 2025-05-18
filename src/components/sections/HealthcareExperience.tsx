@@ -89,12 +89,12 @@ export const HealthcareExperience: React.FC = () => {
           <div className="space-y-8">
             <div className="relative rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                src="https://res.cloudinary.com/dtho1iv7d/image/upload/v1747609879/midwife3_fb0kzn.webp" 
                 alt="Healthcare Professional" 
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-teal-900/70 to-transparent flex flex-col justify-end p-6">
-                <h3 className="font-serif text-white text-2xl font-semibold">Midwifery & Nursing</h3>
+                <h3 className="font-serif text-white text-2xl font-semibold">Midwifery</h3>
                 <p className="text-slate-200">Ghana Health Service, 2010-2023</p>
               </div>
             </div>
