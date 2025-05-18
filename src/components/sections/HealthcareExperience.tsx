@@ -1,15 +1,21 @@
 import React from 'react';
-import { HeartPulse, Users, Star, Stethoscope } from 'lucide-react';
+import { HeartPulse, Users, Star, Stethoscope, ComputerIcon, PenBoxIcon, StarHalf, Settings } from 'lucide-react';
 import { SectionTitle } from '../ui/SectionTitle';
 import { SectionHeading } from '../ui/SectionHeading';
 import { SkillBar } from '../ui/SkillBar';
+import { Germania_One, Workbench } from 'next/font/google';
 
 export const HealthcareExperience: React.FC = () => {
   const transferableSkills = [
-    { name: "Critical Thinking", percentage: 90, icon: <Star className="text-teal-600" size={18} /> },
+    { name: "MicroSoft Office Suit", percentage: 85, icon: <ComputerIcon className="text-teal-600" size={17} /> },
+    { name: "Report writing", percentage: 85, icon: <PenBoxIcon className="text-teal-600" size={18} /> },
+    { name: "Hardworking and innovative.", percentage: 85, icon: <StarHalf className="text-teal-600" size={18} /> },
+    { name: "Critical Thinking", percentage: 90, icon: <Star className="text-teal-600" size={16} /> },
     { name: "Communication", percentage: 95, icon: <Users className="text-teal-600" size={18} /> },
-    { name: "Crisis Management", percentage: 85, icon: <HeartPulse className="text-teal-600" size={18} /> },
-    { name: "Attention to Detail", percentage: 92, icon: <Stethoscope className="text-teal-600" size={18} /> },
+    { name: "Entrepreneurial and marketing skills", percentage: 95, icon: <Settings className="text-teal-600" size={15} /> },
+
+    // { name: "Crisis Management", percentage: 85, icon: <HeartPulse className="text-teal-600" size={18} /> },
+    // { name: "Attention to Detail", percentage: 92, icon: <Stethoscope className="text-teal-600" size={18} /> },
   ];
 
   return (

@@ -21,7 +21,7 @@ export const About: React.FC = () => {
             <div className="absolute -bottom-6 -right-6 bg-white p-4 shadow-lg rounded-lg">
               <div className="flex items-center gap-2 text-navy-800">
                 <Scale className="text-gold-500" />
-                <span className="font-serif font-semibold">Called to the Ghana Bar, 2023</span>
+                <span className="font-serif font-semibold">Called to the Ghana Bar, 2025</span>
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@ export const About: React.FC = () => {
             <SectionHeading>From Healthcare to Law: My Unique Journey</SectionHeading>
             
             <p className="text-slate-700">
-              As the first female lawyer in my family and the first Ghana Health Service midwife/nurse to transition to legal practice, my journey represents a unique intersection of healthcare and law.
+              As the first female lawyer in my family and the first Ghana Health Service midwife to transition to legal practice, my journey represents a unique intersection of healthcare and law.
             </p>
             
             <p className="text-slate-700">

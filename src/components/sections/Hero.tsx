@@ -23,7 +23,7 @@ export const Hero: React.FC = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 opacity-0 animate-fadeUp animation-delay-300">
-          <span className="block">Adelheid London</span>
+          <span className="block">Adelheid Babatz Nyarko London</span>
           <span className="text-gold-500 block mt-2">Attorney at Law</span>
         </h1>
         
