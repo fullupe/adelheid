@@ -14,8 +14,6 @@ export const HealthcareExperience: React.FC = () => {
     { name: "Communication", percentage: 95, icon: <Users className="text-teal-600" size={18} /> },
     { name: "Entrepreneurial and marketing skills", percentage: 95, icon: <Settings className="text-teal-600" size={15} /> },
 
-    // { name: "Crisis Management", percentage: 85, icon: <HeartPulse className="text-teal-600" size={18} /> },
-    // { name: "Attention to Detail", percentage: 92, icon: <Stethoscope className="text-teal-600" size={18} /> },
   ];
 
   return (
@@ -28,7 +26,7 @@ export const HealthcareExperience: React.FC = () => {
             <SectionHeading>A Decade of Healthcare Excellence</SectionHeading>
             
             <p className="text-slate-700">
-              My career with the Ghana Health Service spanning over a decade as a midwife and nurse provided me with invaluable experiences that continue to shape my approach to legal practice.
+              My career with the Ghana Health Service spanning over a decade as a midwife provided me with invaluable experiences that continue to shape my approach to legal practice.
             </p>
             
             <div className="bg-teal-50 border-l-4 border-teal-500 p-4 italic text-slate-700">

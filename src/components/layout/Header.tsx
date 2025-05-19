@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
           >
             <Scale size={28} className="text-gold-500" />
             <span className={`font-serif transition-colors duration-300 ${scrolled ? 'text-navy-800' : 'text-white'}`}>
-              Adelheid London
+            Adelheid Babatz Nyarko London
             </span>
           </a>
 
