@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Scale className="text-gold-500" size={24} />
-              <h3 className="font-serif text-xl font-semibold">Adelheid London</h3>
+              <h3 className="font-serif text-xl font-semibold">Adelheid Babatz Nyarko London</h3>
             </div>
             <p className="text-slate-300 max-w-xs">
               A dedicated lawyer with a unique background in healthcare, bringing a fresh perspective to legal practice in Ghana.
@@ -72,7 +72,8 @@ export const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-navy-700 mt-8 pt-8 text-center text-slate-400">
-          <p>© {currentYear} Adelheid London. All rights reserved.</p>
+          <p>© {currentYear} Adelheid Babatz Nyarko London. All rights reserved.</p>
+          <a target="_blank" href="https://fyberlite.vercel.app" className='cursor-pointer'>Powered by fyberlite</a>
         </div>
       </div>
     </footer>
