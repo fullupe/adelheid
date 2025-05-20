@@ -20,6 +20,16 @@ export const LegalQualifications: React.FC = () => {
                     <div className="w-2 h-2 rounded-full bg-gold-500"></div>
                   </div>
                   <div>
+                    <p className="font-medium text-navy-800">Professional Law course</p>
+                    <p className="text-sm text-slate-600">Ghana School of Law </p>
+                    <p className="text-xs text-slate-500">2022-2024</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="min-w-5 pt-1">
+                    <div className="w-2 h-2 rounded-full bg-gold-500"></div>
+                  </div>
+                  <div>
                     <p className="font-medium text-navy-800">LLB, Faculty of Law</p>
                     <p className="text-sm text-slate-600">Central University</p>
                     <p className="text-xs text-slate-500">2019-2021</p>
@@ -124,6 +134,33 @@ export const LegalQualifications: React.FC = () => {
             </div>
 
 
+            {/* Legal  */}
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
+              <BookMarked className="text-gold-500 mb-4" size={32} />
+              <h3 className="font-serif text-xl font-semibold text-navy-800 mb-2">Legal Practice</h3>
+              <div className="space-y-4">
+                <div className="border-l-2 border-teal-500 pl-4">
+                  <p className="font-medium text-navy-800">Internship</p>
+                  <p className="text-sm text-slate-600">Osei Kofi Legal Consult</p>
+                  <p className="text-xs text-slate-500">July 2023 – August 2023</p>
+                  <ul className="mt-2 text-sm text-slate-600 list-disc list-inside">
+                    <li>Drafted legal motions under the guidance of my superior</li>
+                    <li>Conducted legal research under the guidance of my superior</li>
+                  </ul>
+                </div>
+                <div className="border-l-2 border-teal-500 pl-4">
+                  <p className="font-medium text-navy-800">Internship</p>
+                  <p className="text-sm text-slate-600">High Court 2, Appeal Court Complex Kumasi</p>
+                  <p className="text-xs text-slate-500">June 2018 - June 2021</p>
+                  <ul className="mt-2 text-sm text-slate-600 list-disc list-inside">
+                    <li>Observing court proceedings</li>
+                    <li>Conducted research to aid supervisors in their legal work</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            
             <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
               <Award className="text-gold-500 mb-4" size={32} />
               <h3 className="font-serif text-xl font-semibold text-navy-800 mb-2">Bar Admission</h3>
