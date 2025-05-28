@@ -59,7 +59,7 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="text-gold-500 mt-1" />
-                <span className="text-slate-300">Accra, Ghana</span>
+                <span className="text-slate-300">Accra and Kumasi, Ghana</span>
               </li>
               <li className="flex items-center gap-2">
                 <Linkedin size={16} className="text-gold-500" />
