@@ -75,7 +75,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-navy-800">Office Location</h4>
-                  <p className="text-slate-600">Accra, Ghana</p>
+                  <p className="text-slate-600">Accra and Kumasi, Ghana</p>
                   <p className="text-sm text-slate-500 mt-1">Consultations by appointment</p>
                 </div>
               </div>
