@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { SectionTitle } from '../ui/SectionTitle';
-
+import emailjs from '@emailjs/browser';
 export const Contact: React.FC = () => {
   const [formState, setFormState] = useState({
     name: '',
@@ -19,22 +19,37 @@ export const Contact: React.FC = () => {
     const { name, value } = e.target;
     setFormState(prev => ({ ...prev, [name]: value }));
   };
+
+  const templateParams = {
+    name: formState.name,
+    email: formState.email,
+    phone: formState.phone,
+    message: formState.message,
+  };
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+  
+    emailjs
+  .send('service_22ss0qw', 'template_p57v6c4', templateParams, {
+    publicKey: 'R3pEd8gs9440Xfjpt',
+  })
+  .then(
+    (response) => {
+      console.log('SUCCESS!', response.status, response.text);
       setIsSubmitting(false);
       setSubmitSuccess(true);
       setFormState({ name: '', email: '', phone: '', message: '' });
-      
-      // Reset success message after 3 seconds
-      setTimeout(() => {
-        setSubmitSuccess(false);
-      }, 5000);
-    }, 1500);
+     
+    },
+    (err) => {
+      console.log('FAILED...', err);
+    },
+  );
+  setSubmitSuccess(false);
+ 
   };
   
   return (
@@ -53,7 +68,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-navy-800">Email</h4>
-                  <p className="text-slate-600">contact@adelheidlondon.com</p>
+                  <p className="text-slate-600">ladelheid25@gmail.com</p>
                   <p className="text-sm text-slate-500 mt-1">Response within 24-48 hours</p>
                 </div>
               </div>
@@ -75,7 +90,9 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-navy-800">Office Location</h4>
-                  <p className="text-slate-600">Accra and Kumasi, Ghana</p>
+                  <p className="text-slate-600">Dominion Chambers</p>
+                  <p className="text-slate-600">chelsea House Adum</p>
+                  <p className="text-slate-600">Kumasi, Ghana</p>
                   <p className="text-sm text-slate-500 mt-1">Consultations by appointment</p>
                 </div>
               </div>
